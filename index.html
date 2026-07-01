@@ -647,21 +647,21 @@
       <div class="depth-pos-label">Cornerback</div>
       <div class="depth-rows">
         <div class="depth-row starter"><div class="depth-slot s-starter">Starter</div><div class="depth-name">D.J. Reed</div><div class="depth-tag">FA 2025</div></div>
-        <div class="depth-row starter"><div class="depth-slot s-starter">Starter</div><div class="depth-name">Terrion Arnold</div><div class="depth-tag">Draft 2024</div></div>
+        <div class="depth-row starter"><div class="depth-slot s-starter">Starter</div><div class="depth-name">Rock Ya Sin</div><div class="depth-tag">FA 2025</div></div>
         <div class="depth-row starter"><div class="depth-slot s-starter">Starter</div><div class="depth-name">Roger McCreary</div><div class="depth-tag">FA 2026</div></div>
-        <div class="depth-row reserve"><div class="depth-slot s-reserve">Reserve</div><div class="depth-name">Rock Ya Sin</div><div class="depth-tag">FA 2025</div></div>
         <div class="depth-row reserve"><div class="depth-slot s-reserve">Reserve</div><div class="depth-name">Ennis Rakestraw</div><div class="depth-tag">Draft 2024</div></div>
         <div class="depth-row reserve"><div class="depth-slot s-reserve">Reserve</div><div class="depth-name">Khalil Dorsey</div><div class="depth-tag">FA 2022</div></div>
         <div class="depth-row reserve"><div class="depth-slot s-reserve">Reserve</div><div class="depth-name">Keith Abney II</div><div class="depth-tag">Draft 2026</div></div>
         <div class="depth-row reserve"><div class="depth-slot s-reserve">Reserve</div><div class="depth-name">Nick Whiteside</div><div class="depth-tag">FA 2025</div></div>
       </div>
     </div>
-
+ 
     <div class="depth-position">
       <div class="depth-pos-label">Safety</div>
       <div class="depth-rows">
         <div class="depth-row starter"><div class="depth-slot s-starter">Starter</div><div class="depth-name">Kerby Joseph</div><div class="depth-tag">Draft 2022</div></div>
         <div class="depth-row starter"><div class="depth-slot s-starter">Starter</div><div class="depth-name">Brian Branch</div><div class="depth-tag">Draft 2023</div></div>
+        <div class="depth-row reserve"><div class="depth-slot s-reserve">Reserve</div><div class="depth-name">Chuck Clark</div><div class="depth-tag">FA 2026</div></div>
         <div class="depth-row reserve"><div class="depth-slot s-reserve">Reserve</div><div class="depth-name">Avonte Maddox</div><div class="depth-tag">FA 2025</div></div>
        <div class="depth-row reserve"><div class="depth-slot s-reserve">Reserve</div><div class="depth-name">Thomas Harper</div><div class="depth-tag">FA 2025</div></div>
         <div class="depth-row reserve"><div class="depth-slot s-reserve">Reserve</div><div class="depth-name">Dan Jackson</div><div class="depth-tag">Draft 2025</div></div>
@@ -771,7 +771,6 @@
     <div class="contract-year-group">
       <div class="contract-year-label">Through 2027</div>
       <div class="contract-grid">
-        <div class="contract-card"><div class="contract-player">Terrion Arnold</div><div class="contract-tags"><span class="contract-note">CB</span><span class="contract-note option">5th Yr Option</span></div></div>
         <div class="contract-card"><div class="contract-player">Ennis Rakestraw</div><div class="contract-tags"><span class="contract-note">CB</span></div></div>
         <div class="contract-card"><div class="contract-player">Christian Mahogany</div><div class="contract-tags"><span class="contract-note">OG</span></div></div>
       </div>
@@ -833,7 +832,7 @@
   <div class="draft-year">
     <div class="year-label">2024</div>
     <div class="picks-grid">
-      <div class="pick"><div class="pick-rd">Rd 1</div><div class="pick-num">#29</div><div class="pick-info"><div class="pick-name"><span class="pos-badge">CB</span>Terrion Arnold</div><div class="pick-detail">Alabama</div></div></div>
+      <div class="pick"><div class="pick-rd">Rd 1</div><div class="pick-num">#29</div><div class="pick-info"><div class="pick-name"><span class="pos-badge">CB</span>Terrion Arnold</div><div class="pick-detail">Alabama</div><div class="note">Released before 2026 season</div></div></div>
       <div class="pick"><div class="pick-rd">Rd 2</div><div class="pick-num">#61</div><div class="pick-info"><div class="pick-name"><span class="pos-badge">CB</span>Ennis Rakestraw</div><div class="pick-detail">Missouri</div></div></div>
       <div class="pick"><div class="pick-rd">Rd 4</div><div class="pick-num">#126</div><div class="pick-info"><div class="pick-name"><span class="pos-badge">OT</span>Giovanni Manu</div><div class="pick-detail">UBC</div></div></div>
       <div class="pick"><div class="pick-rd">Rd 4</div><div class="pick-num">#132</div><div class="pick-info"><div class="pick-name"><span class="pos-badge">RB</span>Sione Vaki</div><div class="pick-detail">Utah</div></div></div>
@@ -1220,7 +1219,7 @@
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     document.getElementById('tab-' + name).classList.add('active');
     const btns = document.querySelectorAll('.tab-btn');
-    const order = ['draft','contracts','depth'];
+    const order = ['depth','contracts','draft'];
     btns[order.indexOf(name)].classList.add('active');
     window.scrollTo({ top: document.querySelector('.tab-nav').offsetTop - 56, behavior: 'smooth' });
   }
